@@ -47,7 +47,7 @@
   tags: ['openvpn', 'openvpn_server']
 
 - name: 'openvpn | generate ta.key'
-  command: "openvpn --genkey --secret /etc/openvpn/{{ ansible_hostname }}/keys/ta.key"
+  command: "openvpn --genkey secret /etc/openvpn/{{ ansible_hostname }}/keys/ta.key"
   when: is_installed
   tags: ['openvpn', 'openvpn_server']
 
